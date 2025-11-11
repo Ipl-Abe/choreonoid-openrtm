@@ -223,9 +223,25 @@ void RTCItem::doPutProperties(PutPropertyFunction& putProperty)
 {
     Item::doPutProperties(putProperty);
 
+    // FilePathProperty moduleProperty(
+    //     moduleName,
+    //     { //format(_("RT-Component module (*{})"), DLL_SUFFIX) 
+    //         format(std::string(_("RT-Component module (*{})")), DLL_SUFFIX)
+    //     });
+    // FilePathProperty moduleProperty(
+    //     // modulePath,
+    //     moduleName,
+    //     fmt::format(_("RT-Component module (*{})"), DLL_SUFFIX) // gettext文字列をそのまま渡す
+    // );
+    // フィルタ文字列は fmt::runtime(_(...)) でラップし、vector<string> に入れる
+    std::vector<std::string> filters{
+        fmt::format(fmt::runtime(_("RT-Component module (*{})")), DLL_SUFFIX)
+    };
+
     FilePathProperty moduleProperty(
-        moduleName,
-        { format(_("RT-Component module (*{})"), DLL_SUFFIX) });
+        moduleName,   // ファイル名
+        filters       // フィルタ（vector<string>）
+    );
 
     if (baseDirectoryType.is(RTC_DIRECTORY)) {
         moduleProperty.setBaseDirectory(rtcDirectory.string());
@@ -379,7 +395,7 @@ bool RTComponentImpl::createRTC(PropertyMap& prop)
                 string initFunc(componentName + "Init");
                 setupModules(actualFilename, initFunc, componentName, prop);
             } else {
-                mv->putln(MessageView::ERROR,format(_("File \"{}\" of RTC \"{}\" does not exist."), dllPath.string(), componentName));
+                mv->putln(MessageView::ERROR,format(fmt::runtime(_("File \"{}\" of RTC \"{}\" does not exist.")), dllPath.string(), componentName));
             }
         }
     }
@@ -387,9 +403,9 @@ bool RTComponentImpl::createRTC(PropertyMap& prop)
     bool created = isValid();
 
     if (created) {
-        mv->putln(format(_("RTC \"{0}\" has been created from \"{1}\"."), componentName, actualFilename));
+        mv->putln(format(fmt::runtime(_("RTC \"{0}\" has been created from \"{1}\".")), componentName, actualFilename));
     } else {
-        mv->putln(MessageView::ERROR, format(_("RTC \"{}\" cannot be created."), componentName));
+        mv->putln(MessageView::ERROR, format(fmt::runtime(_("RTC \"{}\" cannot be created.")), componentName));
     }
 
     return created;
@@ -415,10 +431,10 @@ void RTComponentImpl::setupModules(string& fileName, string& initFuncName, strin
 
     if (!rtc_) {
         mv->putln(
-            format(_("RTC \"{0}\" cannot be created by the RTC manager.\n"
+            format(fmt::runtime(_("RTC \"{0}\" cannot be created by the RTC manager.\n"
                      " RTC module file: \"{1}\"\n"
                      " Init function: {2}\n"
-                     " option: {3}"),
+                     " option: {3}")),
                    componentName, fileName, initFuncName, option));
     }
 }
@@ -477,9 +493,9 @@ void RTComponentImpl::createProcess(string& command, PropertyMap& prop)
     rtcProcess.start(command.c_str(), argv);
 #endif
     if (!rtcProcess.waitForStarted()) {
-        mv->putln(format(_("RT Component process \"{}\" cannot be executed."), command));
+        mv->putln(format(fmt::runtime(_("RT Component process \"{}\" cannot be executed.")), command));
     } else {
-        mv->putln(format(_("RT Component process \"{}\" has been executed."), command));
+        mv->putln(format(fmt::runtime(_("RT Component process \"{}\" has been executed.")), command));
         rtcProcess.sigReadyReadStandardOutput().connect(
             [&](){ onReadyReadServerProcessOutput(); });
     }
@@ -499,14 +515,14 @@ void RTComponentImpl::deleteRTC()
 {
     if (rtc_) {
         string rtcName(rtc_->getInstanceName());
-        mv->putln(format(_("delete {}"), rtcName));
+        mv->putln(format(fmt::runtime(_("delete {}")), rtcName));
         if (!cnoid::deleteRTC(rtc_)) {
-            mv->putln(format(_("{} cannot be deleted."), rtcName));
+            mv->putln(format(fmt::runtime(_("{} cannot be deleted.")), rtcName));
         }
         rtc_ = nullptr;
 
     } else if (rtcProcess.state() != QProcess::NotRunning) {
-        mv->putln(format(_("delete {}"), componentName));
+        mv->putln(format(fmt::runtime(_("delete {}")), componentName));
         rtcProcess.kill();
         rtcProcess.waitForFinished(100);
     }

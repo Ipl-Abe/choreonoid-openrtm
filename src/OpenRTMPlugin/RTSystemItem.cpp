@@ -497,7 +497,7 @@ bool RTSComp::connectionCheckSub(RTSPort* rtsPort)
             }
             catch (CORBA::SystemException& ex) {
                 MessageView::instance()->putln(
-                    format(_("CORBA {0} ({1}), {2} in RTSComp::connectionCheckSub()"),
+                    format(fmt::runtime(_("CORBA {0} ({1}), {2} in RTSComp::connectionCheckSub()")),
                            ex._name(), ex._rep_id(), ex.NP_minorString()),
                     MessageView::WARNING);
                 continue;
@@ -563,7 +563,7 @@ bool RTSComp::getComponentPath(RTC::PortService_ptr source, std::string& out_pat
         }
         catch (CORBA::SystemException& ex) {
             MessageView::instance()->putln(
-                format(_("CORBA {0} ({1}), {2} in RTSComp::getComponentPath()"),
+                format(fmt::runtime(_("CORBA {0} ({1}), {2} in RTSComp::getComponentPath()")),
                        ex._name(), ex._rep_id(), ex.NP_minorString()),
                 MessageView::WARNING);
             return false;

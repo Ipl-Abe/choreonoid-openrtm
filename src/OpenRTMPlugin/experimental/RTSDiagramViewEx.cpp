@@ -23,6 +23,7 @@
 #include <fmt/format.h>
 #include "../gettext.h"
 #include <src/OpenRTMPlugin/RTSystemItem.h>
+#include <cnoid/Archive>
 
 using namespace cnoid;
 using namespace std;
@@ -971,7 +972,7 @@ void RTSDiagramViewExImpl::dropEvent(QDropEvent *event)
     for (list<NamingContextHelper::ObjectInfo>::iterator it = nsViewSelections.begin(); it != nsViewSelections.end(); it++) {
         NamingContextHelper::ObjectInfo& info = *it;
         if (!info.isAlive_) {
-            MessageView::instance()->putln(fmt::format(_("{} is not alive"), info.id_));
+            MessageView::instance()->putln(fmt::format(fmt::runtime(_("{} is not alive")), info.id_));
         } else {
             addRTSComp(info, mapToScene(event->pos()));
             DDEBUG_V("%s", info.getFullPath().c_str());
@@ -1370,7 +1371,12 @@ void RTSDiagramViewExImpl::setNewRTSItemDetector()
     if (!currentRTSItem) {
         auto rtsItems = RootItem::instance()->descendantItems<RTSystemItem>();
         if (!rtsItems.empty()){
-            setCurrentRTSItem(rtsItems[0]);
+            // setCurrentRTSItem(rtsItems[0]);
+            if (!rtsItems.empty()) {
+                if (auto ex = dynamic_cast<RTSystemItemEx*>(rtsItems[0].get())) {
+                    setCurrentRTSItem(ex);
+                }
+            }
         } else {
             itemAddedConnection.reset(
                 RootItem::instance()->sigItemAdded().connect(

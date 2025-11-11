@@ -310,8 +310,8 @@ std::string ControllerRTCItemImpl::getModuleFilename()
                 path = cnoid::stdx::filesystem::path(projectDir) / path;
             } else {
                 mv->putln(
-                    format(_("The rtc of {} cannot be generated because the project directory "
-                             "is not determined. Please save the project as a project file."),
+                    format(fmt::runtime(_("The rtc of {} cannot be generated because the project directory "
+                             "is not determined. Please save the project as a project file.")),
                            self->name()),
                     MessageView::ERROR);
                 return string();
@@ -329,7 +329,7 @@ std::string ControllerRTCItemImpl::getModuleFilename()
         return path.string();
     } else {
         mv->putln(
-            format(_("RTC module file \"{0}\" of {1} does not exist."), path.string(), self->name()),
+            format(fmt::runtime(_("RTC module file \"{0}\" of {1} does not exist.")), path.string(), self->name()),
             MessageView::ERROR);
     }
     
@@ -346,7 +346,7 @@ std::string ControllerRTCItem::getDefaultRTCInstanceName() const
 bool ControllerRTCItem::createRTC()
 {
     if(impl->createRTCmain()){
-        impl->mv->putln(format(_("BodyIoRTC \"{}\" has been created."), impl->rtcInstanceName));
+        impl->mv->putln(format(fmt::runtime(_("BodyIoRTC \"{}\" has been created.")), impl->rtcInstanceName));
         return true;
     }
     return false;
@@ -379,7 +379,7 @@ bool ControllerRTCItemImpl::createRTCmain(bool isBodyIORTC) {
     }
     if(instanceBaseName.empty()){
         mv->putln(
-            format(_("The RTC instance name of {} is not specified."), self->name()),
+            format(fmt::runtime(_("The RTC instance name of {} is not specified.")), self->name()),
             MessageView::ERROR);
         return false;
     }
@@ -395,8 +395,8 @@ bool ControllerRTCItemImpl::createRTCmain(bool isBodyIORTC) {
     }
     if(index >= maxNumInstances){
         mv->putln(
-            format(_("RTC \"{0}\" of {1} is not created because more than "
-                     "{2} existing instances have the same base name \"{3}\"."),
+            format(fmt::runtime(_("RTC \"{0}\" of {1} is not created because more than "
+                     "{2} existing instances have the same base name \"{3}\".")),
                    moduleName, self->name(), maxNumInstances, instanceBaseName),
             MessageView::ERROR);
         return false;
@@ -460,10 +460,10 @@ bool ControllerRTCItemImpl::createRTCmain(bool isBodyIORTC) {
 
     if(!rtc){
         mv->putln(
-            format(_("RTC \"{0}\" of {1} cannot be created by the RTC manager.\n"
+            format(fmt::runtime(_("RTC \"{0}\" of {1} cannot be created by the RTC manager.\n"
                      " RTC module file: \"{2}\"\n"
                      " Init function: {3}\n"
-                     " option: {4}"),
+                     " option: {4}")),
                    moduleName, self->name(), moduleFilename, initFuncName, option),
             MessageView::ERROR);
         return false;
@@ -523,7 +523,7 @@ void ControllerRTCItemImpl::deleteRTC(bool waitToBeDeleted)
         }
         if(!deleted){
             mv->putln(
-                format(_("RTC instance {0} of {1} cannot be deleted."),
+                format(fmt::runtime(_("RTC instance {0} of {1} cannot be deleted.")),
                        rtcInstanceName, self->name()),
                 MessageView::WARNING);
         }
@@ -628,7 +628,7 @@ void ControllerRTCItemImpl::doPutProperties(PutPropertyFunction& putProperty)
 {
     FilePathProperty moduleProperty(
         moduleNameProperty,
-        { format(_("RT-Component module (*{})"), DLL_SUFFIX) });
+        { format(fmt::runtime(_("RT-Component module (*{})")), DLL_SUFFIX) });
 
     if(baseDirectoryType.is(RTC_DIRECTORY)){
         moduleProperty.setBaseDirectory(rtcDirectory.string());

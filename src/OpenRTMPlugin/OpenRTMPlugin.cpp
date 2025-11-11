@@ -112,9 +112,9 @@ public:
             ::coil::Creator<::RTC::ExecutionContextBase, ExecutionContextType>,
             ::coil::Destructor<::RTC::ExecutionContextBase, ExecutionContextType>) == coil::FactoryReturn::OK) {
 #endif
-            mv->putln(format(_("{} has been registered."), name));
+            mv->putln(format(fmt::runtime(_("{} has been registered.")), name));
         } else {
-            mv->putln(format(_("Failed to register {}."), name), MessageView::WARNING);
+            mv->putln(format(fmt::runtime(_("Failed to register {}.")), name), MessageView::WARNING);
         }
     }
 
@@ -327,7 +327,7 @@ public:
                 mv->notify(_("An RT component which is not managed by Choreonoid is being deleted."));
             } else {
                 mv->notify(
-                    format(_("{} RT components which are not managed by Choreonoid are being deleted."),
+                    format(fmt::runtime(_("{} RT components which are not managed by Choreonoid are being deleted.")),
                            n));
             }
             mv->flush();
@@ -574,7 +574,7 @@ bool cnoid::deleteRTC(RTC::RtcBase* rtc)
 
         } catch (CORBA::SystemException& ex) {
             MessageView::instance()->putln(
-                format(_("CORBA {0} ({1}), {2} in cnoid::deleteRTC()."),
+                format(fmt::runtime(_("CORBA {0} ({1}), {2} in cnoid::deleteRTC().")),
                        ex._name(), ex._rep_id(), ex.NP_minorString()),
                 MessageView::WARNING);
         }

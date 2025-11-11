@@ -1,27 +1,143 @@
 <?xml version="1.0"?>
 <rts:RtsProfile rts:version="0.2" rts:id="RTSystem:AIST:RTSystem:1.0.0" xmlns:rts="http://www.openrtp.org/namespaces/rts" xmlns:rtsExt="http://www.openrtp.org/namespaces/rts_ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<rts:Components xsi:type="rtsExt:component_ext" rts:isRequired="false" rts:compositeType="None" rts:activeConfigurationSet="default" rts:instanceName="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC" rts:pathUri="localhost/Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.rtc" rts:id="RTC:JAEA:Generic:Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC:1.0">
+		<rtsExt:Properties rtsExt:value="false" rtsExt:name="OpenRTM_NS" />
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.u">
+			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.dq">
+			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.light">
+			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.q">
+			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.dv">
+			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedAcceleration3D:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedAcceleration3D:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.w">
+			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedAngularVelocity3D:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedAngularVelocity3D:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:ConfigurationSets rts:id="default" />
+		<rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="0" rts:rate="1000" rts:kind="PERIODIC" />
+		<rtsExt:Location rtsExt:direction="RIGHT" rtsExt:width="-1" rtsExt:height="-1" rtsExt:x="393" rtsExt:y="320" />
+	</rts:Components>
 	<rts:Components xsi:type="rtsExt:component_ext" rts:isRequired="false" rts:compositeType="None" rts:activeConfigurationSet="default" rts:instanceName="JoystickRTC" rts:pathUri="localhost/JoystickRTC.rtc" rts:id="RTC:AIST:HumanInterfaceDevice:JoystickRTC:1.0.0">
 		<rtsExt:Properties rtsExt:value="false" rtsExt:name="OpenRTM_NS" />
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="JoystickRTC.axes">
 			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.data_type" />
-			<rtsExt:Properties rtsExt:value="flush,new,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="JoystickRTC.buttons">
 			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBooleanSeq:1.0" rtsExt:name="dataport.data_type" />
-			<rtsExt:Properties rtsExt:value="flush,new,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBooleanSeq:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:ConfigurationSets rts:id="default">
 			<rts:ConfigurationData rts:data="" rts:name="device" />
 			<rts:ConfigurationData rts:data="0" rts:name="debugLevel" />
 		</rts:ConfigurationSets>
-		<rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="0" rts:rate="30" rts:kind="PERIODIC" />
-		<rtsExt:Location rtsExt:direction="RIGHT" rtsExt:width="-1" rtsExt:height="-1" rtsExt:x="1" rtsExt:y="41" />
+		<rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="0" rts:rate="1000" rts:kind="PERIODIC">
+			<rtsExt:Properties rtsExt:value="YES" rtsExt:name="sync_transition" />
+			<rtsExt:Properties rtsExt:value="NO" rtsExt:name="sync_activation" />
+			<rtsExt:Properties rtsExt:value="NO" rtsExt:name="sync_deactivation" />
+			<rtsExt:Properties rtsExt:value="0.5" rtsExt:name="transition_timeout" />
+			<rtsExt:Properties rtsExt:value="SimulationExecutionContext" rtsExt:name="type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="name" />
+		</rts:ExecutionContexts>
+		<rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="1" rts:rate="1000000" rts:kind="PERIODIC">
+			<rtsExt:Properties rtsExt:value="YES" rtsExt:name="sync_transition" />
+			<rtsExt:Properties rtsExt:value="NO" rtsExt:name="sync_activation" />
+			<rtsExt:Properties rtsExt:value="NO" rtsExt:name="sync_deactivation" />
+			<rtsExt:Properties rtsExt:value="0.5" rtsExt:name="transition_timeout" />
+			<rtsExt:Properties rtsExt:value="SimulationPeriodicExecutionContext" rtsExt:name="type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="name" />
+		</rts:ExecutionContexts>
+		<rtsExt:Location rtsExt:direction="RIGHT" rtsExt:width="-1" rtsExt:height="-1" rtsExt:x="34" rtsExt:y="41" />
 	</rts:Components>
 	<rts:Components xsi:type="rtsExt:component_ext" rts:isRequired="false" rts:compositeType="None" rts:activeConfigurationSet="default" rts:instanceName="Tank-TankIoRTC" rts:pathUri="localhost/Tank-TankIoRTC.rtc" rts:id="RTC:AIST:Generic:Tank-TankIoRTC:1.0">
 		<rtsExt:Properties rtsExt:value="false" rtsExt:name="OpenRTM_NS" />
@@ -29,47 +145,93 @@
 			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
 			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Tank-TankIoRTC.dq">
 			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
 			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Tank-TankIoRTC.light">
 			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="dataport.data_type" />
 			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Tank-TankIoRTC.q">
 			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
-			<rtsExt:Properties rtsExt:value="flush,new,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Tank-TankIoRTC.dv">
 			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedAcceleration3D:1.0" rtsExt:name="dataport.data_type" />
-			<rtsExt:Properties rtsExt:value="flush,new,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedAcceleration3D:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Tank-TankIoRTC.w">
 			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedAngularVelocity3D:1.0" rtsExt:name="dataport.data_type" />
-			<rtsExt:Properties rtsExt:value="flush,new,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedAngularVelocity3D:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:ConfigurationSets rts:id="default" />
-		<rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="0" rts:rate="1000" rts:kind="PERIODIC" />
-		<rtsExt:Location rtsExt:direction="RIGHT" rtsExt:width="-1" rtsExt:height="-1" rtsExt:x="385" rtsExt:y="41" />
+		<rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="0" rts:rate="1000" rts:kind="PERIODIC">
+			<rtsExt:Properties rtsExt:value="YES" rtsExt:name="sync_transition" />
+			<rtsExt:Properties rtsExt:value="NO" rtsExt:name="sync_activation" />
+			<rtsExt:Properties rtsExt:value="NO" rtsExt:name="sync_deactivation" />
+			<rtsExt:Properties rtsExt:value="0.5" rtsExt:name="transition_timeout" />
+			<rtsExt:Properties rtsExt:value="SimulationExecutionContext" rtsExt:name="type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="name" />
+		</rts:ExecutionContexts>
+		<rtsExt:Location rtsExt:direction="RIGHT" rtsExt:width="-1" rtsExt:height="-1" rtsExt:x="418" rtsExt:y="41" />
 	</rts:Components>
 	<rts:Components xsi:type="rtsExt:component_ext" rts:isRequired="false" rts:compositeType="None" rts:activeConfigurationSet="default" rts:instanceName="TankJoystickControllerRTC" rts:pathUri="localhost/TankJoystickControllerRTC.rtc" rts:id="RTC:AIST:Generic:TankJoystickControllerRTC:1.0">
 		<rtsExt:Properties rtsExt:value="false" rtsExt:name="OpenRTM_NS" />
@@ -77,90 +239,453 @@
 			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
 			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="TankJoystickControllerRTC.dv">
 			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedAcceleration3D:1.0" rtsExt:name="dataport.data_type" />
 			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedAcceleration3D:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="TankJoystickControllerRTC.axes">
 			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.data_type" />
 			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="TankJoystickControllerRTC.buttons">
 			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBooleanSeq:1.0" rtsExt:name="dataport.data_type" />
 			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBooleanSeq:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="TankJoystickControllerRTC.dq">
 			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
-			<rtsExt:Properties rtsExt:value="flush,new,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="TankJoystickControllerRTC.u">
 			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
-			<rtsExt:Properties rtsExt:value="flush,new,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="TankJoystickControllerRTC.switch1">
 			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="dataport.data_type" />
-			<rtsExt:Properties rtsExt:value="flush,new,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="TankJoystickControllerRTC.switch2">
 			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="dataport.data_type" />
-			<rtsExt:Properties rtsExt:value="flush,new,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="TankJoystickControllerRTC.switch3">
 			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="dataport.data_type" />
-			<rtsExt:Properties rtsExt:value="flush,new,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="TankJoystickControllerRTC.switch4">
 			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
 			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="dataport.data_type" />
-			<rtsExt:Properties rtsExt:value="flush,new,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
 			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
-			<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:ConfigurationSets rts:id="default" />
+		<rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="0" rts:rate="1000" rts:kind="PERIODIC">
+			<rtsExt:Properties rtsExt:value="YES" rtsExt:name="sync_transition" />
+			<rtsExt:Properties rtsExt:value="NO" rtsExt:name="sync_activation" />
+			<rtsExt:Properties rtsExt:value="NO" rtsExt:name="sync_deactivation" />
+			<rtsExt:Properties rtsExt:value="0.5" rtsExt:name="transition_timeout" />
+			<rtsExt:Properties rtsExt:value="SimulationExecutionContext" rtsExt:name="type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="name" />
+		</rts:ExecutionContexts>
+		<rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="1" rts:rate="1000000" rts:kind="PERIODIC">
+			<rtsExt:Properties rtsExt:value="YES" rtsExt:name="sync_transition" />
+			<rtsExt:Properties rtsExt:value="NO" rtsExt:name="sync_activation" />
+			<rtsExt:Properties rtsExt:value="NO" rtsExt:name="sync_deactivation" />
+			<rtsExt:Properties rtsExt:value="0.5" rtsExt:name="transition_timeout" />
+			<rtsExt:Properties rtsExt:value="SimulationPeriodicExecutionContext" rtsExt:name="type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="name" />
+		</rts:ExecutionContexts>
+		<rtsExt:Location rtsExt:direction="RIGHT" rtsExt:width="-1" rtsExt:height="-1" rtsExt:x="185" rtsExt:y="41" />
+	</rts:Components>
+	<rts:Components xsi:type="rtsExt:component_ext" rts:isRequired="false" rts:compositeType="None" rts:activeConfigurationSet="default" rts:instanceName="Turtlebot3withDualOpenManipulatorJoystickControllerRTC" rts:pathUri="localhost/Turtlebot3withDualOpenManipulatorJoystickControllerRTC.rtc" rts:id="RTC:AIST:Generic:Turtlebot3withDualOpenManipulatorJoystickControllerRTC:1.0">
+		<rtsExt:Properties rtsExt:value="false" rtsExt:name="OpenRTM_NS" />
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.q">
+			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.dv">
+			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedAcceleration3D:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedAcceleration3D:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.axes">
+			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.buttons">
+			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBooleanSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBooleanSeq:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.dq">
+			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.u">
+			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.switch1">
+			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.switch2">
+			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.switch3">
+			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="data_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.switch4">
+			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="push,pull" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.corba_cdr" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.data_service" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.direct" />
+			<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.interface_option.shared_memory" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBoolean:1.0" rtsExt:name="data_type" />
 		</rts:DataPorts>
 		<rts:ConfigurationSets rts:id="default" />
 		<rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="0" rts:rate="1000" rts:kind="PERIODIC" />
-		<rtsExt:Location rtsExt:direction="RIGHT" rtsExt:width="-1" rtsExt:height="-1" rtsExt:x="152" rtsExt:y="41" />
+		<rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="1" rts:rate="1000000" rts:kind="PERIODIC" />
+		<rtsExt:Location rtsExt:direction="RIGHT" rtsExt:width="-1" rtsExt:height="-1" rtsExt:x="0" rtsExt:y="242" />
 	</rts:Components>
-	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="372d8e7f-e433-40b2-925e-912bef77fe28" rts:name="JoystickRTC.axes_TankJoystickControllerRTC.axes" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush">
-		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="JoystickRTC.axes" rts:instanceName="JoystickRTC" rts:componentId="RTC:AIST:HumanInterfaceDevice:JoystickRTC:1.0.0">
-			<rtsExt:Properties rtsExt:value="localhost/JoystickRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+	<rts:Components xsi:type="rtsExt:component_ext" rts:isRequired="false" rts:compositeType="None" rts:activeConfigurationSet="default" rts:instanceName="JoytoDXLConvertRTC0" rts:pathUri="localhost/rel-Intel-Z790-Ddr5.host_cxt/JoytoDXLConvertRTC0.rtc" rts:id="RTC:JAEA:Converter:JoytoDXLConvertRTC0:1.0.0">
+		<rtsExt:Properties rtsExt:value="false" rtsExt:name="OpenRTM_NS" />
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="JoytoDXLConvertRTC0.axes">
+			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="data_type" />
+			<rtsExt:Properties rtsExt:value="push,pull,duplex" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,csp_channel,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="JoytoDXLConvertRTC0.buttons">
+			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBooleanSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBooleanSeq:1.0" rtsExt:name="data_type" />
+			<rtsExt:Properties rtsExt:value="push,pull,duplex" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,csp_channel,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="JoytoDXLConvertRTC0.current_q">
+			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="data_type" />
+			<rtsExt:Properties rtsExt:value="push,pull,duplex" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,csp_channel,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="JoytoDXLConvertRTC0.dxl_comms">
+			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="data_type" />
+			<rtsExt:Properties rtsExt:value="push,pull,duplex" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,csp_channel,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+		</rts:DataPorts>
+		<rts:ConfigurationSets rts:id="default" />
+		<rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="0" rts:rate="1000" rts:kind="PERIODIC">
+			<rtsExt:Properties rtsExt:value="YES" rtsExt:name="sync_transition" />
+			<rtsExt:Properties rtsExt:value="0.5" rtsExt:name="transition_timeout" />
+			<rtsExt:Properties rtsExt:value="PeriodicExecutionContext" rtsExt:name="type" />
+			<rtsExt:Properties rtsExt:value="1000.0" rtsExt:name="rate" />
+		</rts:ExecutionContexts>
+		<rtsExt:Location rtsExt:direction="RIGHT" rtsExt:width="-1" rtsExt:height="-1" rtsExt:x="451" rtsExt:y="186" />
+	</rts:Components>
+	<rts:Components xsi:type="rtsExt:component_ext" rts:isRequired="false" rts:compositeType="None" rts:activeConfigurationSet="default" rts:instanceName="Turtlebot3OpenManipulatorRTC0" rts:pathUri="localhost/rel-Intel-Z790-Ddr5.host_cxt/Turtlebot3OpenManipulatorRTC0.rtc" rts:id="RTC:JAEA:Category:Turtlebot3OpenManipulatorRTC0:1.0.0">
+		<rtsExt:Properties rtsExt:value="false" rtsExt:name="OpenRTM_NS" />
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Turtlebot3OpenManipulatorRTC0.dxl_comms">
+			<rtsExt:Properties rtsExt:value="DataInPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="Any" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="data_type" />
+			<rtsExt:Properties rtsExt:value="push,pull,duplex" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,csp_channel,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Turtlebot3OpenManipulatorRTC0.choreonoid_comms">
+			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="data_type" />
+			<rtsExt:Properties rtsExt:value="push,pull,duplex" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,csp_channel,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+		</rts:DataPorts>
+		<rts:DataPorts xsi:type="rtsExt:dataport_ext" rts:name="Turtlebot3OpenManipulatorRTC0.current_state">
+			<rtsExt:Properties rtsExt:value="DataOutPort" rtsExt:name="port.port_type" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.data_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.subscription_type" />
+			<rtsExt:Properties rtsExt:value="block,flush,new,nonblock,periodic" rtsExt:name="dataport.io_mode" />
+			<rtsExt:Properties rtsExt:value="cdr" rtsExt:name="dataport.marshaling_types" />
+			<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="data_type" />
+			<rtsExt:Properties rtsExt:value="push,pull,duplex" rtsExt:name="dataport.dataflow_type" />
+			<rtsExt:Properties rtsExt:value="corba_cdr,csp_channel,data_service,direct,shared_memory" rtsExt:name="dataport.interface_type" />
+		</rts:DataPorts>
+		<rts:ConfigurationSets rts:id="default" />
+		<rts:ExecutionContexts xsi:type="rtsExt:execution_context_ext" rts:id="0" rts:rate="1000" rts:kind="PERIODIC">
+			<rtsExt:Properties rtsExt:value="YES" rtsExt:name="sync_transition" />
+			<rtsExt:Properties rtsExt:value="0.5" rtsExt:name="transition_timeout" />
+			<rtsExt:Properties rtsExt:value="PeriodicExecutionContext" rtsExt:name="type" />
+			<rtsExt:Properties rtsExt:value="1000.0" rtsExt:name="rate" />
+		</rts:ExecutionContexts>
+		<rtsExt:Location rtsExt:direction="RIGHT" rtsExt:width="-1" rtsExt:height="-1" rtsExt:x="644" rtsExt:y="65" />
+	</rts:Components>
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="f87db026-b204-11f0-aa3b-25c14c7396c9" rts:name="JoytoDXLConvertRTC0.axes_JoystickRTC.axes" rts:dataType="IDL:RTC/TimedFloatSeq:1.0" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="block" rts:pushInterval="6.9530521070564035e-310">
+		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="JoytoDXLConvertRTC0.axes" rts:instanceName="JoytoDXLConvertRTC0" rts:componentId="RTC:JAEA:Converter:JoytoDXLConvertRTC0:1.0.0">
+			<rtsExt:Properties rtsExt:value="localhost/rel-Intel-Z790-Ddr5.host_cxt/JoytoDXLConvertRTC0.rtc" rtsExt:name="COMPONENT_PATH_ID" />
 		</rts:sourceDataPort>
-		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="TankJoystickControllerRTC.axes" rts:instanceName="TankJoystickControllerRTC" rts:componentId="RTC:AIST:Generic:TankJoystickControllerRTC:1.0">
-			<rtsExt:Properties rtsExt:value="localhost/TankJoystickControllerRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="JoystickRTC.axes" rts:instanceName="JoystickRTC" rts:componentId="RTC:AIST:HumanInterfaceDevice:JoystickRTC:1.0.0">
+			<rtsExt:Properties rtsExt:value="localhost/JoystickRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
 		</rts:targetDataPort>
-		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
-		<rtsExt:Properties rtsExt:value="flush" rtsExt:name="dataport.subscription_type" />
+		<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.data_type" />
 		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
+		<rtsExt:Properties rtsExt:value="block" rtsExt:name="dataport.subscription_type" />
 		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
-		<rtsExt:Properties rtsExt:value="{1:(79,60),2:(84,60),3:(122,60),4:(122,96),5:(216,96),6:(221,96)}" rtsExt:name="POSITION" />
+		<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.inport.data_type" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="{1:(507,205),2:(502,205),3:(310,205),4:(310,60),5:(118,60),6:(113,60)}" rtsExt:name="POSITION" />
 	</rts:DataPortConnectors>
-	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="fdfebac1-358f-467d-8e6f-a11125c7bf04" rts:name="JoystickRTC.buttons_TankJoystickControllerRTC.buttons" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush">
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="f51303be-b204-11f0-aa3b-25c14c7396c9" rts:name="JoytoDXLConvertRTC0.buttons_JoystickRTC.buttons" rts:dataType="IDL:RTC/TimedBooleanSeq:1.0" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="block" rts:pushInterval="6.9530521070564035e-310">
+		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="JoytoDXLConvertRTC0.buttons" rts:instanceName="JoytoDXLConvertRTC0" rts:componentId="RTC:JAEA:Converter:JoytoDXLConvertRTC0:1.0.0">
+			<rtsExt:Properties rtsExt:value="localhost/rel-Intel-Z790-Ddr5.host_cxt/JoytoDXLConvertRTC0.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:sourceDataPort>
+		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="JoystickRTC.buttons" rts:instanceName="JoystickRTC" rts:componentId="RTC:AIST:HumanInterfaceDevice:JoystickRTC:1.0.0">
+			<rtsExt:Properties rtsExt:value="localhost/JoystickRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:targetDataPort>
+		<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBooleanSeq:1.0" rtsExt:name="dataport.data_type" />
+		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
+		<rtsExt:Properties rtsExt:value="block" rtsExt:name="dataport.subscription_type" />
+		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
+		<rtsExt:Properties rtsExt:value="IDL:RTC/TimedBooleanSeq:1.0" rtsExt:name="dataport.inport.data_type" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="{1:(507,232),2:(502,232),3:(310,232),4:(310,87),5:(118,87),6:(113,87)}" rtsExt:name="POSITION" />
+	</rts:DataPortConnectors>
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="f098f442-b204-11f0-aa3b-25c14c7396c9" rts:name="JoytoDXLConvertRTC0.dxl_comms_Turtlebot3OpenManipulatorRTC0.dxl_comms" rts:dataType="IDL:RTC/TimedFloatSeq:1.0" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="block" rts:pushInterval="6.9530521070564035e-310">
+		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="JoytoDXLConvertRTC0.dxl_comms" rts:instanceName="JoytoDXLConvertRTC0" rts:componentId="RTC:JAEA:Converter:JoytoDXLConvertRTC0:1.0.0">
+			<rtsExt:Properties rtsExt:value="localhost/rel-Intel-Z790-Ddr5.host_cxt/JoytoDXLConvertRTC0.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:sourceDataPort>
+		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Turtlebot3OpenManipulatorRTC0.dxl_comms" rts:instanceName="Turtlebot3OpenManipulatorRTC0" rts:componentId="RTC:JAEA:Category:Turtlebot3OpenManipulatorRTC0:1.0.0">
+			<rtsExt:Properties rtsExt:value="localhost/rel-Intel-Z790-Ddr5.host_cxt/Turtlebot3OpenManipulatorRTC0.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:targetDataPort>
+		<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.data_type" />
+		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
+		<rtsExt:Properties rtsExt:value="block" rtsExt:name="dataport.subscription_type" />
+		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
+		<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.outport.data_type" />
+		<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.inport.data_type" />
+		<rtsExt:Properties rtsExt:value="{1:(567,205),2:(572,205),3:(633.321,205),4:(633.321,84.2075),5:(731.874,84.2075),6:(736.874,84.2075)}" rtsExt:name="POSITION" />
+	</rts:DataPortConnectors>
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="f2de526a-b204-11f0-aa3b-25c14c7396c9" rts:name="Turtlebot3OpenManipulatorRTC0.current_state_JoytoDXLConvertRTC0.current_q" rts:dataType="IDL:RTC/TimedFloatSeq:1.0" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="block" rts:pushInterval="6.9530521070564035e-310">
+		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Turtlebot3OpenManipulatorRTC0.current_state" rts:instanceName="Turtlebot3OpenManipulatorRTC0" rts:componentId="RTC:JAEA:Category:Turtlebot3OpenManipulatorRTC0:1.0.0">
+			<rtsExt:Properties rtsExt:value="localhost/rel-Intel-Z790-Ddr5.host_cxt/Turtlebot3OpenManipulatorRTC0.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:sourceDataPort>
+		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="JoytoDXLConvertRTC0.current_q" rts:instanceName="JoytoDXLConvertRTC0" rts:componentId="RTC:JAEA:Converter:JoytoDXLConvertRTC0:1.0.0">
+			<rtsExt:Properties rtsExt:value="localhost/rel-Intel-Z790-Ddr5.host_cxt/JoytoDXLConvertRTC0.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:targetDataPort>
+		<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.data_type" />
+		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
+		<rtsExt:Properties rtsExt:value="block" rtsExt:name="dataport.subscription_type" />
+		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
+		<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.outport.data_type" />
+		<rtsExt:Properties rtsExt:value="IDL:RTC/TimedFloatSeq:1.0" rtsExt:name="dataport.inport.data_type" />
+		<rtsExt:Properties rtsExt:value="{1:(796.874,111.207),2:(764.643,111.207),3:(764.643,206.583),4:(502,206.583),5:(502,259),6:(507,259)}" rtsExt:name="POSITION" />
+	</rts:DataPortConnectors>
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="849ded62-e865-4410-a4f3-6c524fcdd863" rts:name="JoystickRTC.buttons_TankJoystickControllerRTC.buttons" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush" rts:pushInterval="6.9530521070564035e-310">
 		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="JoystickRTC.buttons" rts:instanceName="JoystickRTC" rts:componentId="RTC:AIST:HumanInterfaceDevice:JoystickRTC:1.0.0">
 			<rtsExt:Properties rtsExt:value="localhost/JoystickRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
 		</rts:sourceDataPort>
@@ -171,9 +696,90 @@
 		<rtsExt:Properties rtsExt:value="flush" rtsExt:name="dataport.subscription_type" />
 		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
 		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
-		<rtsExt:Properties rtsExt:value="{1:(79,78),2:(84,78),3:(122,78),4:(122,114),5:(216,114),6:(221,114)}" rtsExt:name="POSITION" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.inport" />
+		<rtsExt:Properties rtsExt:value="{1:(113,87),2:(118,87),3:(155,87),4:(155,141),5:(250,141),6:(255,141)}" rtsExt:name="POSITION" />
 	</rts:DataPortConnectors>
-	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="edd51ada-db77-40a7-ab0d-ebc112eb78a2" rts:name="Tank-TankIoRTC.q_TankJoystickControllerRTC.q" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush">
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="4e3c3ff0-2574-430b-ae17-63700e5b41a4" rts:name="JoystickRTC.buttons_Turtlebot3withDualOpenManipulatorJoystickControllerRTC.buttons" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush" rts:pushInterval="6.9526423700978228e-310">
+		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="JoystickRTC.buttons" rts:instanceName="JoystickRTC" rts:componentId="RTC:AIST:HumanInterfaceDevice:JoystickRTC:1.0.0">
+			<rtsExt:Properties rtsExt:value="localhost/JoystickRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:sourceDataPort>
+		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.buttons" rts:instanceName="Turtlebot3withDualOpenManipulatorJoystickControllerRTC" rts:componentId="RTC:AIST:Generic:Turtlebot3withDualOpenManipulatorJoystickControllerRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/Turtlebot3withDualOpenManipulatorJoystickControllerRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:targetDataPort>
+		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
+		<rtsExt:Properties rtsExt:value="flush" rtsExt:name="dataport.subscription_type" />
+		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.inport" />
+		<rtsExt:Properties rtsExt:value="{1:(113,87),2:(118,87),3:(146.57,87),4:(146.57,342),5:(175,342),6:(180,342)}" rtsExt:name="POSITION" />
+	</rts:DataPortConnectors>
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="d8b5fba1-8f64-4e79-bdc7-add2a9db9824" rts:name="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.dq_Turtlebot3withDualOpenManipulatorJoystickControllerRTC.dq" rts:dataType="IDL:RTC/TimedDoubleSeq:1.0" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="block" rts:pushInterval="6.9526423700978228e-310">
+		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.dq" rts:instanceName="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC" rts:componentId="RTC:JAEA:Generic:Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:sourceDataPort>
+		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.dq" rts:instanceName="Turtlebot3withDualOpenManipulatorJoystickControllerRTC" rts:componentId="RTC:AIST:Generic:Turtlebot3withDualOpenManipulatorJoystickControllerRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/Turtlebot3withDualOpenManipulatorJoystickControllerRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:targetDataPort>
+		<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
+		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
+		<rtsExt:Properties rtsExt:value="block" rtsExt:name="dataport.subscription_type" />
+		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.inport" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="{1:(672.732,365.341),2:(667.732,365.341),3:(456.366,365.341),4:(456.366,261),5:(245,261),6:(240,261)}" rtsExt:name="POSITION" />
+	</rts:DataPortConnectors>
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="d43463c4-5c06-40fd-ad37-7b4c1facb4b7" rts:name="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.dv_Turtlebot3withDualOpenManipulatorJoystickControllerRTC.dv" rts:dataType="IDL:RTC/TimedAcceleration3D:1.0" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="block" rts:pushInterval="6.9526423700978228e-310">
+		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.dv" rts:instanceName="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC" rts:componentId="RTC:JAEA:Generic:Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:sourceDataPort>
+		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.dv" rts:instanceName="Turtlebot3withDualOpenManipulatorJoystickControllerRTC" rts:componentId="RTC:AIST:Generic:Turtlebot3withDualOpenManipulatorJoystickControllerRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/Turtlebot3withDualOpenManipulatorJoystickControllerRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:targetDataPort>
+		<rtsExt:Properties rtsExt:value="IDL:RTC/TimedAcceleration3D:1.0" rtsExt:name="dataport.data_type" />
+		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
+		<rtsExt:Properties rtsExt:value="block" rtsExt:name="dataport.subscription_type" />
+		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.inport" />
+		<rtsExt:Properties rtsExt:value="{1:(732.732,365.341),2:(737.732,365.341),3:(737.732,438.156),4:(175,438.156),5:(175,288),6:(180,288)}" rtsExt:name="POSITION" />
+	</rts:DataPortConnectors>
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="140272ae-fb79-46a0-adb9-c8830b82f5fd" rts:name="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.u_Turtlebot3withDualOpenManipulatorJoystickControllerRTC.u" rts:dataType="IDL:RTC/TimedDoubleSeq:1.0" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="block" rts:pushInterval="6.9526423700978228e-310">
+		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.u" rts:instanceName="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC" rts:componentId="RTC:JAEA:Generic:Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:sourceDataPort>
+		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.u" rts:instanceName="Turtlebot3withDualOpenManipulatorJoystickControllerRTC" rts:componentId="RTC:AIST:Generic:Turtlebot3withDualOpenManipulatorJoystickControllerRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/Turtlebot3withDualOpenManipulatorJoystickControllerRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:targetDataPort>
+		<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
+		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
+		<rtsExt:Properties rtsExt:value="block" rtsExt:name="dataport.subscription_type" />
+		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.inport" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="{1:(672.732,338.341),2:(667.732,338.341),3:(468.956,338.341),4:(468.956,288),5:(245,288),6:(240,288)}" rtsExt:name="POSITION" />
+	</rts:DataPortConnectors>
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="eb1fac3f-fbb7-49b4-a6a9-06dbd879a494" rts:name="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.q_Turtlebot3withDualOpenManipulatorJoystickControllerRTC.q" rts:dataType="IDL:RTC/TimedDoubleSeq:1.0" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="block" rts:pushInterval="6.9526423700978228e-310">
+		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.q" rts:instanceName="Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC" rts:componentId="RTC:JAEA:Generic:Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/Enlarged_Turtlebot3_dual_Openmanipulator-Turtlebot3withDualOpenManipulatorIoRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:sourceDataPort>
+		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.q" rts:instanceName="Turtlebot3withDualOpenManipulatorJoystickControllerRTC" rts:componentId="RTC:AIST:Generic:Turtlebot3withDualOpenManipulatorJoystickControllerRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/Turtlebot3withDualOpenManipulatorJoystickControllerRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:targetDataPort>
+		<rtsExt:Properties rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0" rtsExt:name="dataport.data_type" />
+		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
+		<rtsExt:Properties rtsExt:value="block" rtsExt:name="dataport.subscription_type" />
+		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.inport" />
+		<rtsExt:Properties rtsExt:value="{1:(732.732,338.341),2:(737.732,338.341),3:(737.732,438.156),4:(175,438.156),5:(175,261),6:(180,261)}" rtsExt:name="POSITION" />
+	</rts:DataPortConnectors>
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="c4430b40-e29a-41ce-af69-dd45e67d1f3e" rts:name="Tank-TankIoRTC.q_TankJoystickControllerRTC.q" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush" rts:pushInterval="6.9530521070564035e-310">
 		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Tank-TankIoRTC.q" rts:instanceName="Tank-TankIoRTC" rts:componentId="RTC:AIST:Generic:Tank-TankIoRTC:1.0">
 			<rtsExt:Properties rtsExt:value="localhost/Tank-TankIoRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
 		</rts:sourceDataPort>
@@ -184,22 +790,11 @@
 		<rtsExt:Properties rtsExt:value="flush" rtsExt:name="dataport.subscription_type" />
 		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
 		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
-		<rtsExt:Properties rtsExt:value="{1:(476,60),2:(548,60),3:(548,0),4:(155,0),5:(155,60),6:(221,60)}" rtsExt:name="POSITION" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.inport" />
+		<rtsExt:Properties rtsExt:value="{1:(510,60),2:(581,60),3:(581,0),4:(188,0),5:(188,60),6:(255,60)}" rtsExt:name="POSITION" />
 	</rts:DataPortConnectors>
-	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="4dc77c4f-2d66-4876-9cea-e5d1e079056c" rts:name="TankJoystickControllerRTC.dq_Tank.dq" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush">
-		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="TankJoystickControllerRTC.dq" rts:instanceName="TankJoystickControllerRTC" rts:componentId="RTC:AIST:Generic:TankJoystickControllerRTC:1.0">
-			<rtsExt:Properties rtsExt:value="localhost/TankJoystickControllerRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
-		</rts:sourceDataPort>
-		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Tank-TankIoRTC.dq" rts:instanceName="Tank-TankIoRTC" rts:componentId="RTC:AIST:Generic:Tank-TankIoRTC:1.0">
-			<rtsExt:Properties rtsExt:value="localhost/Tank-TankIoRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
-		</rts:targetDataPort>
-		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
-		<rtsExt:Properties rtsExt:value="flush" rtsExt:name="dataport.subscription_type" />
-		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
-		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
-		<rtsExt:Properties rtsExt:value="{1:(281,60),2:(286,60),3:(358,60),4:(358,78),5:(411,78),6:(416,78)}" rtsExt:name="POSITION" />
-	</rts:DataPortConnectors>
-	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="0dcfc1b3-9297-4242-9ee9-61202da5563f" rts:name="TankJoystickControllerRTC.switch1_Tank-TankIoRTC.light" rts:dataType="IDL:RTC/TimedBoolean:1.0" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush">
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="d0bdfd39-4f95-4226-b6fe-ad4e08984a8d" rts:name="TankJoystickControllerRTC.switch1_Tank-TankIoRTC.light" rts:dataType="IDL:RTC/TimedBoolean:1.0" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush" rts:pushInterval="6.9530521070564035e-310">
 		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="TankJoystickControllerRTC.switch1" rts:instanceName="TankJoystickControllerRTC" rts:componentId="RTC:AIST:Generic:TankJoystickControllerRTC:1.0">
 			<rtsExt:Properties rtsExt:value="localhost/TankJoystickControllerRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
 		</rts:sourceDataPort>
@@ -211,22 +806,11 @@
 		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
 		<rtsExt:Properties rtsExt:value="flush" rtsExt:name="dataport.subscription_type" />
 		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
-		<rtsExt:Properties rtsExt:value="{1:(282,114),2:(287,114),3:(349.5,114),4:(349.5,114),5:(412,114),6:(417,114)}" rtsExt:name="POSITION" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.inport" />
+		<rtsExt:Properties rtsExt:value="{1:(315,114),2:(320,114),3:(382.5,114),4:(382.5,114),5:(445,114),6:(450,114)}" rtsExt:name="POSITION" />
 	</rts:DataPortConnectors>
-	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="fb8d8b52-4051-4369-a522-99be5dbff552" rts:name="TankJoystickControllerRTC.u_Tank.u" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush">
-		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="TankJoystickControllerRTC.u" rts:instanceName="TankJoystickControllerRTC" rts:componentId="RTC:AIST:Generic:TankJoystickControllerRTC:1.0">
-			<rtsExt:Properties rtsExt:value="localhost/TankJoystickControllerRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
-		</rts:sourceDataPort>
-		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Tank-TankIoRTC.u" rts:instanceName="Tank-TankIoRTC" rts:componentId="RTC:AIST:Generic:Tank-TankIoRTC:1.0">
-			<rtsExt:Properties rtsExt:value="localhost/Tank-TankIoRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
-		</rts:targetDataPort>
-		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
-		<rtsExt:Properties rtsExt:value="flush" rtsExt:name="dataport.subscription_type" />
-		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
-		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
-		<rtsExt:Properties rtsExt:value="{1:(281,78),2:(286,78),3:(321,78),4:(321,60),5:(411,60),6:(416,60)}" rtsExt:name="POSITION" />
-	</rts:DataPortConnectors>
-	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="e8cce317-7dfa-46e8-953c-64a8fc7c6c52" rts:name="Tank-TankIoRTC.dv_TankJoystickControllerRTC.dv" rts:dataType="IDL:RTC/Acceleration3D:1.0" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush">
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="ced4f89f-533e-477a-bb11-2712adab54a1" rts:name="Tank-TankIoRTC.dv_TankJoystickControllerRTC.dv" rts:dataType="IDL:RTC/Acceleration3D:1.0" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush" rts:pushInterval="6.9530521070564035e-310">
 		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Tank-TankIoRTC.dv" rts:instanceName="Tank-TankIoRTC" rts:componentId="RTC:AIST:Generic:Tank-TankIoRTC:1.0">
 			<rtsExt:Properties rtsExt:value="localhost/Tank-TankIoRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
 		</rts:sourceDataPort>
@@ -238,6 +822,68 @@
 		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
 		<rtsExt:Properties rtsExt:value="flush" rtsExt:name="dataport.subscription_type" />
 		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
-		<rtsExt:Properties rtsExt:value="{1:(476,78),2:(514,78),3:(514,12),4:(181,12),5:(181,78),6:(221,78)}" rtsExt:name="POSITION" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.inport" />
+		<rtsExt:Properties rtsExt:value="{1:(510,87),2:(547,87),3:(547,12),4:(214,12),5:(214,87),6:(255,87)}" rtsExt:name="POSITION" />
+	</rts:DataPortConnectors>
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="3c06eab3-1cd8-478c-83bf-5b3775319754" rts:name="TankJoystickControllerRTC.dq_Tank.dq" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush" rts:pushInterval="6.9530521070564035e-310">
+		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="TankJoystickControllerRTC.dq" rts:instanceName="TankJoystickControllerRTC" rts:componentId="RTC:AIST:Generic:TankJoystickControllerRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/TankJoystickControllerRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:sourceDataPort>
+		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Tank-TankIoRTC.dq" rts:instanceName="Tank-TankIoRTC" rts:componentId="RTC:AIST:Generic:Tank-TankIoRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/Tank-TankIoRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:targetDataPort>
+		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
+		<rtsExt:Properties rtsExt:value="flush" rtsExt:name="dataport.subscription_type" />
+		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.inport" />
+		<rtsExt:Properties rtsExt:value="{1:(315,60),2:(320,60),3:(391,60),4:(391,87),5:(445,87),6:(450,87)}" rtsExt:name="POSITION" />
+	</rts:DataPortConnectors>
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="21c38a01-70a2-434b-84bc-d9f8e941f335" rts:name="JoystickRTC.axes_Turtlebot3withDualOpenManipulatorJoystickControllerRTC.axes" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush" rts:pushInterval="6.9526423700978228e-310">
+		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="JoystickRTC.axes" rts:instanceName="JoystickRTC" rts:componentId="RTC:AIST:HumanInterfaceDevice:JoystickRTC:1.0.0">
+			<rtsExt:Properties rtsExt:value="localhost/JoystickRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:sourceDataPort>
+		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Turtlebot3withDualOpenManipulatorJoystickControllerRTC.axes" rts:instanceName="Turtlebot3withDualOpenManipulatorJoystickControllerRTC" rts:componentId="RTC:AIST:Generic:Turtlebot3withDualOpenManipulatorJoystickControllerRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/Turtlebot3withDualOpenManipulatorJoystickControllerRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:targetDataPort>
+		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
+		<rtsExt:Properties rtsExt:value="flush" rtsExt:name="dataport.subscription_type" />
+		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.inport" />
+		<rtsExt:Properties rtsExt:value="{1:(113,60),2:(118,60),3:(146.57,60),4:(146.57,315),5:(175,315),6:(180,315)}" rtsExt:name="POSITION" />
+	</rts:DataPortConnectors>
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="1b8f9180-8f3f-49ca-a312-0eff762881b3" rts:name="JoystickRTC.axes_TankJoystickControllerRTC.axes" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush" rts:pushInterval="6.9530521070564035e-310">
+		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="JoystickRTC.axes" rts:instanceName="JoystickRTC" rts:componentId="RTC:AIST:HumanInterfaceDevice:JoystickRTC:1.0.0">
+			<rtsExt:Properties rtsExt:value="localhost/JoystickRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:sourceDataPort>
+		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="TankJoystickControllerRTC.axes" rts:instanceName="TankJoystickControllerRTC" rts:componentId="RTC:AIST:Generic:TankJoystickControllerRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/TankJoystickControllerRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:targetDataPort>
+		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
+		<rtsExt:Properties rtsExt:value="flush" rtsExt:name="dataport.subscription_type" />
+		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.inport" />
+		<rtsExt:Properties rtsExt:value="{1:(113,60),2:(118,60),3:(155,60),4:(155,114),5:(250,114),6:(255,114)}" rtsExt:name="POSITION" />
+	</rts:DataPortConnectors>
+	<rts:DataPortConnectors xsi:type="rtsExt:dataport_connector_ext" rts:connectorId="e4342439-bfac-4b33-93e5-b816c2da7367" rts:name="TankJoystickControllerRTC.u_Tank.u" rts:interfaceType="corba_cdr" rts:dataflowType="push" rts:subscriptionType="flush" rts:pushInterval="6.9530521070564035e-310">
+		<rts:sourceDataPort xsi:type="rtsExt:target_port_ext" rts:portName="TankJoystickControllerRTC.u" rts:instanceName="TankJoystickControllerRTC" rts:componentId="RTC:AIST:Generic:TankJoystickControllerRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/TankJoystickControllerRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:sourceDataPort>
+		<rts:targetDataPort xsi:type="rtsExt:target_port_ext" rts:portName="Tank-TankIoRTC.u" rts:instanceName="Tank-TankIoRTC" rts:componentId="RTC:AIST:Generic:Tank-TankIoRTC:1.0">
+			<rtsExt:Properties rtsExt:value="localhost/Tank-TankIoRTC.rtc" rtsExt:name="COMPONENT_PATH_ID" />
+		</rts:targetDataPort>
+		<rtsExt:Properties rtsExt:value="push" rtsExt:name="dataport.dataflow_type" />
+		<rtsExt:Properties rtsExt:value="flush" rtsExt:name="dataport.subscription_type" />
+		<rtsExt:Properties rtsExt:value="corba_cdr" rtsExt:name="dataport.interface_type" />
+		<rtsExt:Properties rtsExt:value="little,big" rtsExt:name="dataport.serializer.cdr.endian" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.outport" />
+		<rtsExt:Properties rtsExt:value="" rtsExt:name="dataport.inport" />
+		<rtsExt:Properties rtsExt:value="{1:(315,87),2:(320,87),3:(354,87),4:(354,60),5:(445,60),6:(450,60)}" rtsExt:name="POSITION" />
 	</rts:DataPortConnectors>
 </rts:RtsProfile>

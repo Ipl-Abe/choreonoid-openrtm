@@ -26,17 +26,17 @@ items:
           data:
             file: "${SHARE}/model/Tank/Tank.body"
             format: CHOREONOID-BODY
-            rootPosition: [ -2, -0.5, 0.1 ]
+            rootPosition: [ -2.00000001, -0.500000002, 0.105900008 ]
             rootAttitude: [
-              1, 0, 0,
-              0, 1, 0,
-              0, 0, 1 ]
-            jointDisplacements: [ 0, 0, 0, 0 ]
-            initialRootPosition: [ -2, -0.5, 0.1 ]
+              1, -1.59995736e-08, 1.29018544e-09,
+              1.59995736e-08, 1, 1.96920433e-11,
+              -1.29018544e-09, -1.96920227e-11, 1 ]
+            jointDisplacements: [ -5.96061e-12, -0.561853, 0, 0 ]
+            initialRootPosition: [ -2.00000001, -0.500000002, 0.105900008 ]
             initialRootAttitude: [
-              1, 0, 0,
-              0, 1, 0,
-              0, 0, 1 ]
+              1, -1.59995736e-08, 1.29018544e-09,
+              1.59995736e-08, 1, 1.96920433e-11,
+              -1.29018544e-09, -1.96920227e-11, 1 ]
             fix_root: false
             collisionDetection: true
             selfCollisionDetection: false
@@ -150,6 +150,72 @@ items:
             stateCheckMode: Polling
             checkAtLoading: true
             heartBeatPeriod: 500
+        -
+          id: 9
+          name: "Enlarged_Turtlebot3_dual_Openmanipulator"
+          plugin: Body
+          class: BodyItem
+          is_checked: true
+          data:
+            file: "../../choreonoid/ext/DMU_Choreonoid_Turtlebot3_Lime/Enlarged_Turtlebot3_dual_Openmanipulator.body"
+            format: CHOREONOID-BODY
+            rootPosition: [ -0.0490444318, -3.59582262, -0.0216622271 ]
+            rootAttitude: [
+              0.998808871, 0.0487129544, 0.00280854198,
+              -0.0487127619, 0.998812819, -0.000136923296,
+              -0.00281187767, -5.16338798e-08, 0.999996047 ]
+            jointDisplacements: [
+              0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0 ]
+            initialRootPosition: [ -0.0490444318, -3.59582262, -0.0216622271 ]
+            initialRootAttitude: [
+              0.998808871, 0.0487129544, 0.00280854198,
+              -0.0487127619, 0.998812819, -0.000136923296,
+              -0.00281187767, -5.16340169e-08, 0.999996047 ]
+            fix_root: false
+            collisionDetection: true
+            selfCollisionDetection: false
+            lock_location: false
+            scene_sensitive: true
+            link_kinematics:
+              "Left_Gripper_left_link":
+                base_frame: 0
+                offset_frame: 0
+              "Left_Gripper_right_link":
+                base_frame: 0
+                offset_frame: 0
+              "Right_Gripper_left_link":
+                base_frame: 0
+                offset_frame: 0
+              "Right_Gripper_right_link":
+                base_frame: 0
+                offset_frame: 0
+          children:
+            -
+              id: 10
+              name: "BodyIoRTC"
+              plugin: OpenRTM
+              class: BodyIoRTCItem
+              data:
+                isNoDelayMode: true
+                controllerOptions: ""
+                module: "Turtlebot3withDualOpenManipulatorIoRTC.so"
+                baseDirectory: "RTC directory"
+                instanceName: ""
+                periodicRate: 0
+            -
+              id: 11
+              name: "ControllerRTC"
+              plugin: OpenRTM
+              class: ControllerRTCItem
+              data:
+                isNoDelayMode: false
+                controllerOptions: ""
+                module: "Turtlebot3withDualOpenManipulatorJoystickControllerRTC.so"
+                baseDirectory: "RTC directory"
+                instanceName: ""
+                executionContext: "SimulationExecutionContext"
+                periodicRate: 0
 views:
   -
     id: 0
@@ -162,7 +228,7 @@ views:
     class: ItemTreeView
     mounted: true
     state:
-      expanded: [ 1, 2, 3 ]
+      expanded: [ 1, 2, 3, 9 ]
   -
     id: 2
     plugin: Base
@@ -184,9 +250,9 @@ views:
     class: SceneView
     mounted: true
     state:
-      operation_mode: view
+      operation_mode: edit
       viewpoint_operation_mode: third_person
-      focus_position: [ 0, 0, 0 ]
+      focus_position: [ 4.11425, 0.164938, -0.106353 ]
       visible_polygon_elements: [ face ]
       highlighting: false
       collision_lines: false
@@ -194,9 +260,9 @@ views:
         -
           camera: [ System, Perspective ]
           is_current: true
-          eye: [ -6.44723, -3.30409, 3.23336 ]
-          direction: [ 0.819988, 0.450152, -0.353529 ]
-          up: [ 0.309902, 0.170128, 0.935424 ]
+          eye: [ -9.20414, -6.39447, 5.99476 ]
+          direction: [ 0.836314, 0.307228, -0.454082 ]
+          up: [ 0.426231, 0.15658, 0.89096 ]
         -
           camera: [ System, Orthographic ]
           ortho_height: 20
@@ -237,9 +303,9 @@ views:
     class: SceneView
     mounted: true
     state:
-      operation_mode: view
+      operation_mode: edit
       viewpoint_operation_mode: third_person
-      focus_position: [ 0, 0, 0 ]
+      focus_position: [ -0.744053, -0.392928, 0.369772 ]
       visible_polygon_elements: [ face ]
       highlighting: false
       collision_lines: false
@@ -324,6 +390,11 @@ views:
     state:
       element_type: link
       listing_mode: list
+      current_body_item: 9
+      body_items:
+        -
+          id: 9
+          selected_links: [ 6 ]
   -
     id: 11
     plugin: Body
@@ -370,9 +441,9 @@ views:
     mounted: true
 toolbars:
   "TimeBar":
-    current_time: 0
+    current_time: 10.277
     min_time: 0
-    max_time: 30
+    max_time: 151.402
     frame_rate: 1000
     playback_frame_rate: 60
     idle_loop_driven_mode: false
@@ -393,8 +464,8 @@ toolbars:
     lazyCollisionDetectionMode: true
 Body:
   "BodySelectionManager":
-    current_body_item: 2
-    current_link: "CHASSIS"
+    current_body_item: 9
+    current_link: "Base"
   "KinematicFaultChecker":
     checkJointPositions: true
     angleMargin: 0
@@ -416,6 +487,11 @@ Body:
         show_cm: false
         show_cm_projection: false
         show_zmp: false
+      -
+        body_item: 9
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
   "SplineFilterDialog":
     isInputFrameRateSpecified: false
     inputFrameRate: 200
@@ -430,12 +506,12 @@ viewAreas:
     contents:
       type: splitter
       orientation: horizontal
-      sizes: [ 357, 1559 ]
+      sizes: [ 563, 1283 ]
       children:
         -
           type: splitter
           orientation: vertical
-          sizes: [ 480, 479 ]
+          sizes: [ 450, 448 ]
           children:
             -
               type: pane
@@ -443,21 +519,21 @@ viewAreas:
             -
               type: pane
               views: [ 0, 10, 14 ]
-              current: 14
+              current: 0
         -
           type: splitter
           orientation: vertical
-          sizes: [ 700, 259 ]
+          sizes: [ 656, 242 ]
           children:
             -
               type: splitter
               orientation: horizontal
-              sizes: [ 665, 890 ]
+              sizes: [ 546, 733 ]
               children:
                 -
                   type: splitter
                   orientation: vertical
-                  sizes: [ 313, 383 ]
+                  sizes: [ 458, 194 ]
                   children:
                     -
                       type: pane
@@ -466,19 +542,19 @@ viewAreas:
                     -
                       type: pane
                       views: [ 15, 5 ]
-                      current: 5
+                      current: 15
                 -
                   type: pane
                   views: [ 4 ]
             -
               type: splitter
               orientation: horizontal
-              sizes: [ 1081, 474 ]
+              sizes: [ 889, 390 ]
               children:
                 -
                   type: splitter
                   orientation: horizontal
-                  sizes: [ 683, 394 ]
+                  sizes: [ 562, 323 ]
                   children:
                     -
                       type: pane
@@ -498,3 +574,5 @@ layoutOfToolBars:
       - { name: "SimulationBar", x: 95, priority: 1 }
       - { name: "TimeBar", x: 96, priority: 0 }
       - { name: "SceneBar", x: 1336, priority: 2 }
+    -
+      - { name: "BodyBar", x: 0, priority: 0 }

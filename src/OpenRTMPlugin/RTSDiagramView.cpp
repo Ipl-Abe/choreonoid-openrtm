@@ -903,7 +903,7 @@ void RTSDiagramViewImpl::dropEvent(QDropEvent *event)
     for (list<NamingContextHelper::ObjectInfo>::iterator it = nsViewSelections.begin(); it != nsViewSelections.end(); it++) {
         NamingContextHelper::ObjectInfo& info = *it;
         if (!info.isAlive_) {
-            MessageView::instance()->putln(fmt::format(_("{} is not alive"), info.id_));
+            MessageView::instance()->putln(fmt::format(fmt::runtime(_("{} is not alive")), info.id_));
         } else {
             addRTSComp(info, mapToScene(event->pos()));
             DDEBUG_V("%s", info.getFullPath().c_str());

@@ -719,9 +719,9 @@ void BodyStateSubscriberRTCItemImpl::createRTC()
         "exec_cxt.periodic.type=PeriodicExecutionContext&"
         "exec_cxt.periodic.rate={1}");
     
-    RTC::RtcBase* rtc = createManagedRTC(format(param, self->name(), periodicRate));
+    RTC::RtcBase* rtc = createManagedRTC(format(fmt::runtime(param), self->name(), periodicRate));
     if(!rtc){
-        mv->putln(format(_("RTC for \"{}\" cannot be created."), self->name()), MessageView::ERROR);
+        mv->putln(format(fmt::runtime(_("RTC for \"{}\" cannot be created.")), self->name()), MessageView::ERROR);
         return;
     }
 

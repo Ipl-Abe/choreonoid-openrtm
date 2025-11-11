@@ -240,7 +240,7 @@ bool BodyIoRTCItemImpl::createBodyIoRTC()
         bodyIoRTC = dynamic_cast<BodyIoRTC*>(self->rtc());
         if(!bodyIoRTC){
             mv->putln(
-                format(_("RTC \"{0}\" of {1} cannot be used as a BodyIoRTC because it is not derived from it."),
+                format(fmt::runtime(_("RTC \"{0}\" of {1} cannot be used as a BodyIoRTC because it is not derived from it.")),
                        self->rtcModuleName(), self->name()),
                 MessageView::ERROR);
             self->deleteRTC(false);
@@ -255,14 +255,14 @@ bool BodyIoRTCItemImpl::createBodyIoRTC()
 
         if(!initialized){
             mv->putln(
-                format(_("RTC \"{0}\" of {1} failed to initialize."),
+                format(fmt::runtime(_("RTC \"{0}\" of {1} failed to initialize.")),
                        self->rtcModuleName(), self->name()),
                 MessageView::ERROR);
             self->deleteRTC(true);
             return false;
         }
         
-        mv->putln(format(_("BodyIoRTC \"{}\" has been created."), self->rtcInstanceName()));
+        mv->putln(format(fmt::runtime(_("BodyIoRTC \"{}\" has been created.")), self->rtcInstanceName()));
         
         return true;
     }
